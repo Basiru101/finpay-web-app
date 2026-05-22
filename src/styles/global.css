@@ -1,0 +1,585 @@
+/* =========================
+   GLOBAL RESET (PREMIUM)
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f6f8fc;
+  color: #0f172a;
+  padding-top: 80px;
+}
+
+/* =========================
+   BUTTONS (MODERN FINTECH)
+========================= */
+.btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: white;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+/* =========================
+   NAVBAR (FINTECH STYLE)
+========================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 8%;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid #eef2ff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #4f46e5;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+/* CTA BUTTON */
+.nav-cta {
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: white !important;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #0f172a;
+  border-radius: 5px;
+}
+
+/* =========================
+   HERO (CLEAN FINTECH)
+========================= */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 40px;
+  color: white;
+
+  background:
+    linear-gradient(135deg, rgba(15,23,42,0.85), rgba(79,70,229,0.6)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200")
+    center/cover;
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  width: 100%;
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+/* =========================
+   SERVICES (CARD UPGRADE)
+========================= */
+.services {
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 14px;
+  border: 1px solid #eef2ff;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(79,70,229,0.08);
+}
+
+.card-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   WHY US (FINTECH STYLE)
+========================= */
+.why-us {
+  background: #f1f5f9;
+}
+
+.why-us-container,
+.contact-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.why-us-text,
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.why-us-image-placeholder {
+  flex: 1;
+  min-width: 280px;
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact {
+  background: white;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* =========================
+   GET STARTED (MODERN FLOW)
+========================= */
+.get-started {
+  background: white;
+}
+
+.get-started-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.step {
+  background: #f8fafc;
+  padding: 28px 20px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #eef2ff;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.cta-box {
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+/* =========================
+   STEP NAVIGATION
+========================= */
+.step-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.step-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.step-btn.active {
+  background: #4f46e5;
+  color: white;
+  border: none;
+}
+
+/* =========================
+   STEP CARD (CONTENT AREA)
+========================= */
+.step-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+.step-card h3 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   STRIPE PROGRESS BAR
+========================= */
+.progress-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f46e5;
+  transition: width 0.4s ease;
+}
+
+/* =========================
+   DOT NAVIGATION
+========================= */
+.step-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.step-dot.active {
+  background: #4f46e5;
+  transform: scale(1.3);
+}
+
+/* =========================
+   STEP CARD (STRIPE STYLE)
+========================= */
+.step-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* =========================
+   PROGRESS BAR (FINTECH STYLE)
+========================= */
+.progress-bar {
+  width: 100%;
+  max-width: 520px;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  transition: width 0.4s ease;
+}
+
+/* =========================
+   STEP DOTS
+========================= */
+.step-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.step-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.step-dot.active {
+  background: #4f46e5;
+  transform: scale(1.4);
+}
+
+/* =========================
+   STEP CARD (PRODUCTION UI)
+========================= */
+.step-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.step-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* =========================
+   COMPLETION STATE
+========================= */
+.completion-box {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+/* =========================
+   ACTION BUTTON
+========================= */
+.step-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+/* =========================
+   STEP ACTIONS
+========================= */
+.step-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 22px;
+    padding: 28px 0;
+
+    transform: translateY(-120%);
+    transition: 0.35s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-cta {
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
